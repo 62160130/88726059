@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multi</title>
+    <style>
+        body {
+          background-image: url("https://wallpaperaccess.com/full/2825712.gif");
+      }
+    </style>
+    <script>
+        function multi(num) {
+        num = document.getElementById('number').value
+        div = document.getElementById('disp');
+        ///// กำหนดค่าว่างให้แอททริบิวท์ innerHTML
+        div.innerHTML = ""; 
+        for (i = 1; i <= 12; i++) {
+            div.innerHTML += num + "x" + i + "=" + (num * i) + "<br>";
+        }
+    }
+        
+    </script>
+</head>
+<body>
+    <input type="Integer" id="number" >
+    <button onclick="multi();">คำนวณสูตร</button>
+    <div id="disp"></div>
+   
+</body>
+</html>
